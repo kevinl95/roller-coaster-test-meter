@@ -1,0 +1,27 @@
+<ion-view title="Roller Coaster Test Meter" id="page1" style="background-color:#A75552;">
+  <ion-content padding="true" style="background: url(img/cBFUMN2TTweCAsECjS6x_RollerCoaster-Tycoon-Classic-background_495fc81621674fd179ecabb23b7dda87-xl.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <form id="rollerCoasterTestMeter-form7" class="list">
+      <label class="item item-input" id="rollerCoasterTestMeter-input8" name="name">
+        <span class="input-label">Coaster Name:</span>
+        <input placeholder="" ng-model="data.name" type="text">
+      </label>
+    </form>
+    <div id="capture">
+      <canvas id="latChart" width="300" height="150"></canvas>
+      <canvas id="vertChart" width="300" height="150"></canvas>
+      <div style="background-color:#A75552;" id="results">
+        <p id="exc" style="color:white;">Excitement: Not yet available</p>
+        <p id="int" style="color:white;">Intensity: Not yet available</p>
+        <p id="nau" style="color:white;">Nausea: Not yet available</p>
+      </div>
+    </div>
+    <div id="rollerCoasterTestMeter-button-bar2" class="button-bar">
+      <button id="rollerCoasterTestMeter-button14" ng-click="watchAcceleration()" class="button button-energized button-block">Start</button>
+      <button id="rollerCoasterTestMeter-button15" ng-click="endTest()" class="button button-assertive button-block">End</button>
+      <button id="rollerCoasterTestMeter-button16" ng-click="share()" class="button button-positive button-block">Share</button>
+    </div>
+    <div id="rollerCoasterTestMeter-button-bar4" class="button-bar">
+      <button id="rollerCoasterTestMeter-button25" ng-click="clear()" class="button button-dark button-block">Clear</button>
+    </div>
+  </ion-content>
+</ion-view>
