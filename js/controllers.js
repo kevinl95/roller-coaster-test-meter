@@ -141,7 +141,7 @@ function ($scope, $stateParams) {
        exc_rating = rating(excitement);
        int_rating = rating(intensity);
        nau_rating = rating(nausea);
-       document.getElementById("exc").innerHTML = "Excitement: " + excitement.toFmgixed(2) + ' (' + exc_rating + ')';
+       document.getElementById("exc").innerHTML = "Excitement: " + excitement.toFixed(2) + ' (' + exc_rating + ')';
        document.getElementById("int").innerHTML = "Intensity: " + intensity.toFixed(2) + ' (' + int_rating + ')';
        document.getElementById("nau").innerHTML = "Nausea: " + nausea.toFixed(2) + ' (' + nau_rating + ')';
     };
